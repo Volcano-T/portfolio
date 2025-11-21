@@ -12,7 +12,7 @@ window.addEventListener("resize", resize);
 
 
 const nodes = [];
-for (let i = 0; i < 40; i++) {
+for (let i = 0; i < 500; i++) {
 nodes.push({
 x: Math.random() * canvas.width,
 y: Math.random() * canvas.height,
@@ -42,8 +42,8 @@ const dist = Math.sqrt(dx*dx + dy*dy);
 
 
 if (dist < 150) {
-ctx.strokeStyle = "rgba(0, 234, 255, " + (1 - dist/150) + ")";
-ctx.lineWidth = 1;
+ctx.strokeStyle = "rgba(0, 234, 255, " + (1 - dist/80) + ")";
+ctx.lineWidth = 1.5;
 ctx.beginPath();
 ctx.moveTo(nodes[i].x, nodes[i].y);
 ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -67,5 +67,9 @@ animate();
 }
 
 
-neuralSideCanvas("leftAI");
-neuralSideCanvas("rightAI");
+neuralSideCanvas("neuralBG");
+
+const arrow = document.getElementById("arrow-down");
+arrow.addEventListener("click", () => {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+});
