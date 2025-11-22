@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <section id="hero">
     <header class="hero">
       <!-- AI CANVAS LEFT & RIGHT -->
       <canvas id="neuralBG" class="side-canvas"></canvas>
@@ -45,6 +46,7 @@
           <span>Machine Learning</span>
           <span>Deep Learning</span>
           <span>Data Science</span>
+          <span>NLP</span>
         </div>
         <div class="hero-buttons">
     <a href="#projects" class="btn">View My Work</a>
@@ -52,14 +54,15 @@
   </div>
       </div>
     </header>
+    </section>
 
     <!-- NAVIGATION BAR -->
     <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#AIFeature">AI Feature</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -69,7 +72,8 @@
 </div>
 
 
-<section id="about" class="about-section">
+<section id="about" class="about-section reveal">
+  <canvas id="aboutParticles"></canvas>
     <h2 class="section-title">About <span>Me</span></h2>
 
     <p class="about-desc">
@@ -78,7 +82,7 @@
         learning architectures, I turn complex data challenges into elegant, scalable solutions.
     </p>
 
-    <div class="about-grid">
+    <div class="about-grid reveal">
         <div class="about-card">
             <div class="icon">🤖</div>
             <h3>AI Innovation</h3>
@@ -116,7 +120,7 @@
         </div>
     </div>
 
-    <div class="stats-box">
+    <div class="stats-box reveal">
         <div class="stat">
             <h1>2+</h1>
             <p>Years in Data Science</p>
@@ -134,6 +138,222 @@
     </div>
 </section>
 
+<section id="skills" class="skills-section reveal">
+    <canvas id="skillsCanvas"></canvas>
+
+    <h2 class="section-title">My <span>Skills</span></h2>
+
+    <!-- Software Skills -->
+    <div class="skills-grid software-grid">
+        <div class="skill-card" data-related="pandas,numpy,matplotlib,scikit-Learn,data visualization,annotation,image processing,xai">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="python.png" alt="Python" class="skill-logo">
+                    <h3>Python</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Python</h4>
+                    <p>Programming language for AI, ML, Data Analysis, and automation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,numpy,pandas,model training,model tuning,data visualization">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="tensorflow.png" alt="TensorFlow" class="skill-logo">
+                    <h3>TensorFlow</h3>
+                </div>
+                <div class="card-back">
+                    <h4>TensorFlow</h4>
+                    <p>Deep learning framework for building neural networks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,image processing,annotation">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="opencv.png" alt="OpenCV" class="skill-logo">
+                    <h3>OpenCV</h3>
+                </div>
+                <div class="card-back">
+                    <h4>OpenCV</h4>
+                    <p>Computer vision library for image processing and analysis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,numpy,matplotlib,scikit-Learn">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="pandas.png" alt="Pandas" class="skill-logo">
+                    <h3>Pandas</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Pandas</h4>
+                    <p>Data manipulation and analysis library for Python.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,pandas,scikit-Learn,matplotlib">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="numpy.png" alt="NumPy" class="skill-logo">
+                    <h3>NumPy</h3>
+                </div>
+                <div class="card-back">
+                    <h4>NumPy</h4>
+                    <p>Numerical computing library for Python used in ML & data analysis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,data visualization">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="matplotlib.png" alt="Matplotlib" class="skill-logo">
+                    <h3>Matplotlib</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Matplotlib</h4>
+                    <p>Visualization library to plot graphs, charts, and data insights.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,model training,model tuning">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="scikit_learn.png" alt="Scikit-Learn" class="skill-logo">
+                    <h3>Scikit-Learn</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Scikit-Learn</h4>
+                    <p>Machine learning library for classical ML algorithms.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="image processing,opencv">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="annotation.png" alt="Annotation" class="skill-logo">
+                    <h3>Annotation</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Annotation</h4>
+                    <p>Labeling and tagging images or data for training ML models.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="opencv,python">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="image_processing.png" alt="Image Processing" class="skill-logo">
+                    <h3>Image Processing</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Image Processing</h4>
+                    <p>Manipulating and analyzing images to extract information.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="tensorflow,python,opencv,llm,model tuning">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="nlp.png" alt="NLP" class="skill-logo">
+                    <h3>NLP</h3>
+                </div>
+                <div class="card-back">
+                    <h4>NLP</h4>
+                    <p>Natural Language Processing for text analysis and LLM applications.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,html/css">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="flask.png" alt="Flask" class="skill-logo">
+                    <h3>Flask</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Flask</h4>
+                    <p>Python web framework for building ML APIs and applications.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,data visualization,data scraping">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="powerbi.png" alt="PowerBI" class="skill-logo">
+                    <h3>PowerBI</h3>
+                </div>
+                <div class="card-back">
+                    <h4>PowerBI</h4>
+                    <p>Business intelligence tool for visualizing and reporting data.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="ml,model tuning,python">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="xai.png" alt="XAI" class="skill-logo">
+                    <h3>XAI</h3>
+                </div>
+                <div class="card-back">
+                    <h4>XAI</h4>
+                    <p>Explainable AI for understanding ML model decisions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="python,beautifulsoap,selenium,api,powerbi">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="data_scraping.png" alt="Data Scraping" class="skill-logo">
+                    <h3>Data Scraping</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Data Scraping</h4>
+                    <p>Extracting data from websites using BeautifulSoup, Selenium, and APIs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="flask,web">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="html_css.png" alt="HTML/CSS" class="skill-logo">
+                    <h3>HTML/CSS</h3>
+                </div>
+                <div class="card-back">
+                    <h4>HTML/CSS</h4>
+                    <p>Front-end web technologies for building interactive UI.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-related="flask,web">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="git.png" alt="Git" class="skill-logo">
+                    <h3>Git</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Git</h4>
+                    <p>Version control system for tracking code changes collaboratively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
   </body>
 </html>
